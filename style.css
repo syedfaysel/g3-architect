@@ -1,5 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
 
 /* common styles or Utitlities */
 *{
@@ -7,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans','Poppins', sans-serif;
     background-color: #ffffff;
 }
 
@@ -22,12 +23,42 @@ a{
 
 }
 
+.primary-title{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+
+.secondary-text{
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    color: #FFFFFF;
+    padding: 20px 25px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /*---------------- 
 Header or Navbar 
 -----------------*/
+.company-logo{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .menu{
@@ -58,6 +89,12 @@ header{
     margin-bottom: 50px;
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
 }
 
 .hero-banner img{
@@ -95,10 +132,26 @@ header{
 .features-and-architect{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-column-gap: 50px;
+    align-items: start;
     margin-bottom: 100px;
 }
+.features-info h3{
+    padding-left: 20px;
+    border-left: 3px solid #FF900E;
+}
 
+.feature{
+    padding: 30px 30px 2px 30px;
+    border-radius: 5px;
+    box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2);
+    margin-bottom: 20px;
+}
+.feature-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .architect img{
     width: 100%;
 }
@@ -126,10 +179,24 @@ Some Facts section Style
 
 /* Sponsors Styels */
 
-/* .sponsors-section{
-    margin-bottom: 100px;
+.sponsors-section{
+    margin-top: 100px;
     padding: 10px;
-} */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.sponsor-info{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sponsor-info h2, .quick-feature-title{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
 
 .logos{
     display: grid;
@@ -138,13 +205,13 @@ Some Facts section Style
 }
 
 .logo{
-    border: 1px solid orange;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 .logo img{
     width: 100%;
